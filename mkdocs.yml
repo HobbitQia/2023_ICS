@@ -1,0 +1,91 @@
+site_name: 2023_ICS
+site_url: https://hobbitqia.github.io/2023_ICS
+site_author: HobbitQia
+repo_url: https://hobbitqia.github.io/2023_ICS
+repo_name: 2023_ICS
+
+theme: 
+  name: material
+  language: zh
+  # logo: log.ico
+  # favicon: log.ico
+  custom_dir: overrides
+  features:
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+  font:
+    text: LXGW WenKai Screen
+    code: JetBrains Mono
+  palette:     #切换昼夜模式的颜色，审美差就用默认，专业点就自定义
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default  #配色方案：浅色模式
+      primary: brown  #原色，默认蓝，用于标题、侧边栏、文本链接和其他几个组件
+      accent: brown  #强调色，默认蓝，可以交互的元素如悬停链接、按钮和滚动条
+      toggle:
+        icon: material/weather-sunny #图标，太阳
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"  
+      scheme: slate  #配色方案：深色模式
+      primary: brown  #原色，默认蓝，用于标题、侧边栏、文本链接和其他几个组件
+      toggle:
+        icon: material/weather-night  #图标，月亮
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/git-alt
+    
+plugins:
+  - search
+  - heti:
+      disable_serve: false
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      exclude:
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+
+extra_css:
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - css/custom.css
+
+nav:
+  - Home: index.md
+  - Lecture Notes: 
+    - Introduction: note/chap01.md
+    - Bits, Data Types and Operations: note/chap02.md
+    - Digital Logic Structures: note/chap03.md
+    - The von Neumann Model: note/chap04.md
+    - LC-3: note/chap05.md
+    - Programming: note/chap06.md
+    - Assembly Language: note/chap07.md
+    - Data Structures: note/chap08.md
+    - I/0: note/chap09.md
+  - Labs: 
+    - Introduction: lab/index.md
+    - Lab1: lab/lab1.md
+    - Lab2: lab/lab2.md
+    - Lab3: lab/lab3.md
+    - Lab4: lab/lab4.md
+    - Lab5: lab/lab5.md
+    - Lab6: lab/lab6.md
+  
