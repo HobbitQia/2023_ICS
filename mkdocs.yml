@@ -1,7 +1,7 @@
 site_name: 2023_ICS
 site_url: https://hobbitqia.github.io/2023_ICS
 site_author: HobbitQia
-repo_url: https://hobbitqia.github.io/2023_ICS
+repo_url: https://github.com/HobbitQia/2023_ICS
 repo_name: 2023_ICS
 
 theme: 
@@ -69,9 +69,14 @@ extra_css:
   - css/custom.css
 
 nav:
-  - Home: index.md
+  - Home: 
+    - index.md
+    - Schedule: schedule.md
+    - Syllabus: syllabus.md
+    - FAQ: faq.md
   - Lecture Notes: 
-    - Introduction: note/chap01.md
+    - Lecture Notes: note/index.md
+    - Welcome Abroad: note/chap01.md
     - Bits, Data Types and Operations: note/chap02.md
     - Digital Logic Structures: note/chap03.md
     - The von Neumann Model: note/chap04.md
@@ -81,7 +86,7 @@ nav:
     - Data Structures: note/chap08.md
     - I/0: note/chap09.md
   - Labs: 
-    - Introduction: lab/index.md
+    - Labs: lab/index.md
     - Lab1: lab/lab1.md
     - Lab2: lab/lab2.md
     - Lab3: lab/lab3.md
