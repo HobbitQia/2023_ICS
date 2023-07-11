@@ -22,6 +22,7 @@
 $ pip install mkdocs
 $ pip install mkdocs-material
 $ pip install mkdocs-heti-plugin
+$ pip install mkdocs-git-revision-date-localized-plugin
 ```
 
 具体地，你可以分别查看 [mkdocs 的安装指导](https://www.mkdocs.org/getting-started/#installation) 与 [material 的安装指导](https://squidfunk.github.io/mkdocs-material/getting-started/#installation)。
