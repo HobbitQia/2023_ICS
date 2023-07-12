@@ -7,8 +7,8 @@ repo_name: 2023_ICS
 theme: 
   name: material
   language: zh
-  # logo: log.ico
-  # favicon: log.ico
+  logo: favicon.ico
+  favicon: favicon.ico
   custom_dir: overrides
   features:
     - content.code.annotate
@@ -61,16 +61,21 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
   - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - css/custom.css
+  - css/card.css
 
 nav:
   - Home: 
     - index.md
+    - Resource: resource.md
     - Schedule: schedule.md
     - Syllabus: syllabus.md
     - FAQ: faq.md
@@ -93,4 +98,3 @@ nav:
     - Lab4: lab/lab4.md
     - Lab5: lab/lab5.md
     - Lab6: lab/lab6.md
-  
