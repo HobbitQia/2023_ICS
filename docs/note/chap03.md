@@ -4,6 +4,15 @@ counter: True
 
 # Digital Logic Structures
 
+<div class="card file-block" markdown="1">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"></div>
+<div class="file-body">
+<div class="file-title">Chapter 3</div>
+<div class="file-meta">1169 KB / 19 P / 2023-07-14</div>
+</div>
+<a class="down-button" target="_blank" href="../../assets/notes/chap03.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
+</div>
+
 !!! Abstract
     * Transistors
     * Logic Gates
