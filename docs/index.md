@@ -22,6 +22,7 @@ counter: False
 
 | 时间 | 内容 |
 | --- | :------------------------------------ |
+|2023.7.13| 更新了 Chapter 3 的 [Notes](note/chap03.md)|
 |2023.7.13| 更新了 [TA Session 2 的 PPT](resource.md)|
 |2023.7.13| 更新了 Chapter 1, 2 的 [Notes](note/index.md)|
 |2023.7.12| 更新了 [TA Session 1 的 PPT](resource.md)|
