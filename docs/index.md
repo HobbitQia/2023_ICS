@@ -22,6 +22,7 @@ counter: False
 
 | 时间 | 内容 |
 | --- | :------------------------------------ |
+|2023.7.15| Release [Lab 1](lab/lab1.md) |
 |2023.7.15| 更新了 Chapter 4 的 [Notes](note/chap04.md)|
 |2023.7.15| 更新了 [TA Session 3 的 PPT](resource.md)|
 |2023.7.13| 更新了 Chapter 3 的 [Notes](note/chap03.md)|
