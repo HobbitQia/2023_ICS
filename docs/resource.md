@@ -26,8 +26,19 @@
 <div class="card file-block" markdown="1">
 <div class="file-icon"><img src="../assets/pdf.svg" style="height: 3em;"></div>
 <div class="file-body">
-<div class="file-title">Introduction</div>
+<div class="file-title">TA Session 2</div>
 <div class="file-meta">1150 KB / 45 P / 2023-07-13</div>
 </div>
 <a class="down-button" target="_blank" href="../assets/TA_Session_2.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
+</div>
+
+* **TA Session 3** on 7.15
+
+<div class="card file-block" markdown="1">
+<div class="file-icon"><img src="../assets/pdf.svg" style="height: 3em;"></div>
+<div class="file-body">
+<div class="file-title">TA Session 3</div>
+<div class="file-meta">799 KB / 31 P / 2023-07-15</div>
+</div>
+<a class="down-button" target="_blank" href="../assets/TA_Session_3.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
 </div>
