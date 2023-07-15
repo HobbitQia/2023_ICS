@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#lab-1-lucky-111">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -268,9 +271,55 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Lab1
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Lab1
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../lab2/">
@@ -309,19 +358,121 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Lab1</h1>
+<h1 id="lab-1-lucky-111">Lab 1: Lucky 111<a class="headerlink" href="#lab-1-lucky-111" title="Permanent link">¶</a></h1>
+<div class="card file-block">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"/></div>
+<div class="file-body">
+<div class="file-title">Lab 1: Lucky 111</div>
+<div class="file-meta">32 KB / 2 P / 2023-07-15</div>
+</div>
+<p><a class="down-button" href="../../assets/lab/Lab1.pdf" markdown="1" target="_blank"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> 下载</a></p>
+</div>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>Professor Patt loves the number 7. As a computer man, he would represent 7 in binary 111. That
+is his favorate binary pattern, called Lucky 111. Your job is to write a program to judge whether a given 16-bit value contains that pattern (three consecutive 1's).</p>
+<p>The following examples satisfy this condition so Professor Patt loves them:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>0000 0000 0000 0111
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>0011 1001 1010 1101
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>1111 1111 1111 1111
+</code></pre></div>
+The following examples do not satisfy this condition:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>0000 0000 0000 0000
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>0110 1101 1011 0110
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>1010 1010 1010 1010
+</code></pre></div>
+<h2 id="implementation-details">Implementation Details<a class="headerlink" href="#implementation-details" title="Permanent link">¶</a></h2>
+<ul>
+<li>You are required to write in <strong>LC-3 machine codes</strong> (0's and 1's).</li>
+<li>Your program should start at x3000, which means the first instruction of your program is
+located in position x3000.<br/>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>0011 0000 0000 0000 ; (.ORIG x3000)
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>..... ; your first instruction of the program   
+</code></pre></div></li>
+<li>The input 16-bit value is located in memory location x3100. Your program should load the
+value and then examinate it.</li>
+<li>If the input value satisfies, then set R2 to 1. Otherwise, set R2 to 0.</li>
+<li>Your program must halt after examining the value. The halt instruction is <code>1111 0000 0010 0101</code>.</li>
+</ul>
+<p>For those who want a little challenge: please think how to code with no iteration. (no extra score)</p>
+<h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">¶</a></h2>
+<p>Lab 1 takes <strong>4%</strong> of the total score, consisting of Check part (50%) and Report part (50%).</p>
+<h3 id="check-part">Check Part<a class="headerlink" href="#check-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>First upload your code to Learning in ZJU, then find a TA to check your code in person. TAs will first test the correctness of your program, then ask you some questions to make sure you understand what you code but not cheat.</li>
+<li>You can try again if you fail in checking, but there will be a penalty of -10% (of checking part) for each try.</li>
+<li>We strongly suggest you to make a thorough test by yourself before checking.</li>
+<li>We strongly suggest you to write enough comments in your code so that you will be aware of what's going on in your program and confident to answer TA's questions.</li>
+</ul>
+<h3 id="report-part">Report Part<a class="headerlink" href="#report-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>Report must be written <strong>in English</strong>, concise and carrying main ideas. Try to use the report to convince TAs that you complete the task by yourself.</li>
+<li>Your lab report should contains the following contents:<ul>
+<li>Algorithm. Flowchart or Pseudocode is prefered. The complexity of your algorithm will not affect your score.</li>
+<li>Essential parts of your code with sufficient comments. Please only select the most important code phases and explain them.</li>
+<li>Questions that TA asked you, and Answers.</li>
+</ul>
+</li>
+<li><strong>No more than 2 A4 pages</strong>. No template provided. Be sure to make it readable.</li>
+</ul>
+<h3 id="penalty">Penalty<a class="headerlink" href="#penalty" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Wrong Answer</strong>: -10% of Check part each time.</li>
+<li><strong>Delay</strong>: -20% of the corresponding part per day.</li>
+<li><strong>Cheating</strong>: -100% of this lab. Additionly, -10% of the final score of this course. <strong>Please note that upload your answer to the Internet is also CHEATING!!!</strong></li>
+</ul>
+<p>If you have more questions, please contact your TA or comment here.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月15日 14:34:41</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>

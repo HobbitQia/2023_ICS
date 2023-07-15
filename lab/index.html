@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#lab-introduction">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -308,19 +311,46 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    实验日历
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Labs</h1>
+<h1 id="lab-introduction">Lab Introduction<a class="headerlink" href="#lab-introduction" title="Permanent link">¶</a></h1>
+<!-- LC-3 Tool 可见 https://github.com/HobbitQia/2023_ICS/tree/master/docs/assets/LC-3 -->
+<p>在<span class="heti-skip"><span class="heti-spacing"> </span>MacOS<span class="heti-spacing"> </span></span>下安装<span class="heti-skip"><span class="heti-spacing"> </span>LC-3 Tools<span class="heti-spacing"> </span></span>如果遇到问题可以可以参考<a href="https://ics.liuly.moe/faq/lc3tools.html"><span><span class="heti-spacing"> </span>https://ics.liuly.moe/faq/lc3tools.html</span></a>
+<a href="https://support.apple.com/zh-cn/HT202491">https://support.apple.com/zh-cn/HT202491</a></p>
+<p>使用<span class="heti-skip"><span class="heti-spacing"> </span>LC-3 Tool<span class="heti-spacing"> </span></span>中需要注意的点：</p>
+<ul>
+<li>文件存储路径中不能有中文。</li>
+<li>如果使用机器码的方式编程，保存文件的格式应为<code>.bin</code><span class="heti-skip"><span class="heti-spacing"> </span>;<span class="heti-spacing"> </span></span>如果使用<span class="heti-skip"><span class="heti-spacing"> </span>LC-3<span class="heti-spacing"> </span></span>汇编的方式编程，保存文件的格式应为 <code>.asm</code>。</li>
+<li>在<span class="heti-skip"><span class="heti-spacing"> </span>Editor<span class="heti-spacing"> </span></span>的界面，如果想要运行代码，需要先点击左侧工具栏的<span class="heti-skip"><span class="heti-spacing"> </span>Convert<span class="heti-spacing"> </span></span>按钮（扳手形状）生成目标文件，如果下面的输出框显示<span class="heti-skip"><span class="heti-spacing"> </span>successful<span class="heti-spacing"> </span></span>说明生成成功。随后点击到<span class="heti-skip"><span class="heti-spacing"> </span>Simulator<span class="heti-spacing"> </span></span>界面，运行前需要先加载目标文件，再运行。</li>
+<li>运行前最好点击左侧工具栏的<span class="heti-skip"><span class="heti-spacing"> </span>Randomized Machine<span class="heti-spacing"> </span></span>随机初始化机器的值。</li>
+<li>写代码时，如果寄存器会被用来做运算，需要检查寄存器的值有没有被初始化。</li>
+</ul>
+<p>To be continued...</p>
+<h2 id="_1">实验日历<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<ul>
+<li>Lab1: Lucky 111  Released on 7.15</li>
+</ul>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月15日 14:34:41</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
