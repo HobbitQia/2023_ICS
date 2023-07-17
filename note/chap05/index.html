@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#the-lc-3">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -226,9 +229,150 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          LC-3
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         LC-3
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-isa-overview">
+    The ISA: Overview
+  </a>
+<nav aria-label="The ISA: Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-organization">
+    Memory Organization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#registers">
+    Registers
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-instruction-set">
+    The Instruction Set
+  </a>
+<nav aria-label="The Instruction Set" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opcodes">
+    Opcodes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-types">
+    Data Types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#addressing-modes">
+    Addressing Modes
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-instruction-set-of-the-lc-3">
+    The Instruction Set of the LC-3
+  </a>
+<nav aria-label="The Instruction Set of the LC-3" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#operate-instructions">
+    Operate Instructions
+  </a>
+<nav aria-label="Operate Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#not">
+    NOT
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#immdiates-in-operate-instructions">
+    Immdiates In Operate Instructions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-lea-instruction">
+    The LEA Instruction
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-movement-instructions">
+    Data Movement Instructions
+  </a>
+<nav aria-label="Data Movement Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pc-relative-mode">
+    PC-Relative Mode
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#indirect-mode">
+    Indirect Mode
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#baseoffset-mode">
+    Base+offset Mode
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#control-instructions">
+    Control Instructions
+  </a>
+<nav aria-label="Control Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conditional-branches">
+    Conditional Branches
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-jmp-instruction">
+    The JMP Instruction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-trap-instruction">
+    The TRAP Instruction
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-datapath">
+    The Datapath
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../chap06/">
@@ -309,13 +453,274 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-isa-overview">
+    The ISA: Overview
+  </a>
+<nav aria-label="The ISA: Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-organization">
+    Memory Organization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#registers">
+    Registers
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-instruction-set">
+    The Instruction Set
+  </a>
+<nav aria-label="The Instruction Set" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opcodes">
+    Opcodes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-types">
+    Data Types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#addressing-modes">
+    Addressing Modes
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-instruction-set-of-the-lc-3">
+    The Instruction Set of the LC-3
+  </a>
+<nav aria-label="The Instruction Set of the LC-3" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#operate-instructions">
+    Operate Instructions
+  </a>
+<nav aria-label="Operate Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#not">
+    NOT
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#immdiates-in-operate-instructions">
+    Immdiates In Operate Instructions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-lea-instruction">
+    The LEA Instruction
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-movement-instructions">
+    Data Movement Instructions
+  </a>
+<nav aria-label="Data Movement Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pc-relative-mode">
+    PC-Relative Mode
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#indirect-mode">
+    Indirect Mode
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#baseoffset-mode">
+    Base+offset Mode
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#control-instructions">
+    Control Instructions
+  </a>
+<nav aria-label="Control Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conditional-branches">
+    Conditional Branches
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-jmp-instruction">
+    The JMP Instruction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-trap-instruction">
+    The TRAP Instruction
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-datapath">
+    The Datapath
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>LC-3</h1>
+<h1 id="the-lc-3">The LC-3<a class="headerlink" href="#the-lc-3" title="Permanent link">¶</a></h1>
+<div class="card file-block">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"/></div>
+<div class="file-body">
+<div class="file-title">Chapter 5</div>
+<div class="file-meta">1074 KB / 10 P / 2023-07-16</div>
+</div>
+<p><a class="down-button" href="../../assets/notes/chap05.pdf" markdown="1" target="_blank"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> 下载</a></p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<ul>
+<li>The ISA of LC-3<ul>
+<li>Memory Organization</li>
+<li>Registers</li>
+<li>Instruction Set<ul>
+<li>Operate</li>
+<li>Data Movement</li>
+<li>Control</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Microarchitecture of LC-3. (Datapath)</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It's worth noting that in the notes I skip many examples on the book. However, if you have not taken the course <em>Assembly Language</em>, or not familiar with programming in assembly language, please read the example on the textbook carefully and practice it sufficiently. </p>
+</div>
+<h2 id="the-isa-overview">The ISA: Overview<a class="headerlink" href="#the-isa-overview" title="Permanent link">¶</a></h2>
+<p>The ISA specifies the <em>memory organization, register set and instruction set</em>, including the opcodes, data types, addressing modes of the instruction in the instruction set.</p>
+<h3 id="memory-organization">Memory Organization<a class="headerlink" href="#memory-organization" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>address space</strong>: <span class="arithmatex">\(2^{16}\)</span> (<strong>i.e.</strong> 65536) locations.<br/>
+Not all 65536 addresses are actually used for memory locations.</li>
+<li><strong>addressability</strong>: 16 bits. We refer to 16 bits as 1 <strong>word</strong> in the LC-3, so it's also called <strong>word-addressable</strong>.</li>
+</ul>
+<h3 id="registers">Registers<a class="headerlink" href="#registers" title="Permanent link">¶</a></h3>
+<p>As mentioned before, each register is called a <strong>GPR (General Purpose Register)</strong>. They are referred to as <span class="arithmatex">\(R0, R1, \ldots R7\)</span>.  </p>
+<p>Registers store information that can be operated on later, and they are stored register files, where CPU can access them faster than memory.</p>
+<h3 id="the-instruction-set">The Instruction Set<a class="headerlink" href="#the-instruction-set" title="Permanent link">¶</a></h3>
+<p>An instruction is made up of its opcode and operands.<br/>
+The instruction set is defined by its set of opcdeos, data types and addressing modes.</p>
+<h4 id="opcodes">Opcodes<a class="headerlink" href="#opcodes" title="Permanent link">¶</a></h4>
+<p>The LC-3 ISA has 15 instructions and the opcode is specified in <code>bit[15:12]</code>. The code 1101 has been left unspecified. </p>
+<h4 id="data-types">Data Types<a class="headerlink" href="#data-types" title="Permanent link">¶</a></h4>
+<p>Every opcode will interpret the bit patterns of its operands according to the data type it's designed to support.  </p>
+<p>The same bit pattern can correspound to different number, depending on instructions that interpret it. <strong><em>e.g.</em></strong> <code>ADD R2, R1, #1</code>, <code>LD R2, #1</code>. In ADD, <code>#1</code> is interpreted as a number for arithmetic, while in LD, <code>#1</code> is interpreted as an address.  </p>
+<h4 id="addressing-modes">Addressing Modes<a class="headerlink" href="#addressing-modes" title="Permanent link">¶</a></h4>
+<p>An operand can generally be found in one of 3 places: <em>in memory, in a register or as a part of the instruction</em>. If the operand of the instruction, we refer to it as a <strong>literal</strong> or as an <strong>immediate</strong> operand.  </p>
+<p>The LC-3 supports 5 addressing modes: <em>immediate</em> (or literal), <em>register</em> and 3 memory addressing modes: <em>PC-relative</em>, <em>indirect</em> and <em>Base+offset</em>.</p>
+<h2 id="the-instruction-set-of-the-lc-3">The Instruction Set of the LC-3<a class="headerlink" href="#the-instruction-set-of-the-lc-3" title="Permanent link">¶</a></h2>
+<h3 id="operate-instructions">Operate Instructions<a class="headerlink" href="#operate-instructions" title="Permanent link">¶</a></h3>
+<h4 id="not">NOT<a class="headerlink" href="#not" title="Permanent link">¶</a></h4>
+<p><img src="https://s2.loli.net/2022/07/15/54yhRGj6VbHwOvD.png" width="100%"/></p>
+<p>The <strong>NOT</strong> (opcode=1001) instruction is the only operate instruction that performs a <em>unary</em> operation. <code>bits[11:9]</code> is DR, <code>bits[8:6]</code> is SR, and <code>bits[5:0]</code> are set to 1.  </p>
+<p>The datapath of NOT is as follows:
+<img src="https://s2.loli.net/2022/07/15/ZRd3L1BPJUmOAcW.png" width="70%"/></p>
+<p>For binary operations (like ADD, AND) the datapath is almost the same except the operand B which is also from the register files.</p>
+<h4 id="immdiates-in-operate-instructions">Immdiates In Operate Instructions<a class="headerlink" href="#immdiates-in-operate-instructions" title="Permanent link">¶</a></h4>
+<p>The diagram below shows <code>ADD R1, R4, #-2</code>. Note that we the operand B is computed by <em>signed-extending</em> <code>bits[4:0]</code> to 16 bits. And since there is only 5 bits to store immediates, not all 2's complement intergers can be immediate operands. (only <span class="arithmatex">\([-16, 15]\)</span>)
+<img src="https://s2.loli.net/2022/07/15/Rlp9Z64FTXKdaUL.png" width="70%"/></p>
+<p>With the help of NOT and ADD (with immediate), we can implement the <em>substraction</em>. (Recall that in Chapter 2, the negative of an integer represented in 2's complement can be obtained by complementing the number and adding 1)  </p>
+<h4 id="the-lea-instruction">The LEA Instruction<a class="headerlink" href="#the-lea-instruction" title="Permanent link">¶</a></h4>
+<p><strong>LEA</strong> (opcode=1110) loads the register specified by <code>bits[11:9]</code> of the instruction with the value formed by adding the incremented PC to the <em>sign-extended</em> <code>bits[8:0]</code> of the instruction.</p>
+<p>LEA is useful to <em>initiallize a register with an address</em>.</p>
+<p>Note that the values to be loaded into the register <em>does not involve any access to memory</em>, and it does not affect CC.</p>
+<p><img src="https://s2.loli.net/2022/07/15/OBi49TSUtN23ZqR.png" width="70%"/></p>
+<h3 id="data-movement-instructions">Data Movement Instructions<a class="headerlink" href="#data-movement-instructions" title="Permanent link">¶</a></h3>
+<p>The process of moving information from memory to a register is caled <strong>load</strong>, and the process of moving information from a register to a memory is called <strong>store</strong>. </p>
+<p>The LC-3 contains 6 instructions that move formation:　LD, LDR, LDI, ST, STR, STI. The format: 
+<img src="https://s2.loli.net/2022/07/15/oT5GsSKh4etpmzk.png" width="100%"/></p>
+<ul>
+<li>
+<p><strong>PC-Relative Mode</strong>: <strong>LD</strong> and <strong>ST</strong>
+<img src="https://s2.loli.net/2022/07/15/Alrnkiu3ypvbZPK.png" width="100%"/></p>
+</li>
+<li>
+<p><strong>Indirect Mode</strong>: <strong>LDI</strong> and <strong>STI</strong>
+<img src="https://s2.loli.net/2022/07/15/JcZ6bdiqK1l5Uw2.png" width="100%"/></p>
+</li>
+<li>
+<p><strong>Base+offset Mode</strong>: <strong>LDR</strong> and <strong>STR</strong>
+<img src="https://s2.loli.net/2022/07/15/Dx3ThbQ4Gsz6HrZ.png" width="100%"/></p>
+</li>
+</ul>
+<p>Note that laod instructions will influence CC, while store not. The value that is finally read from memory and will be loaded to the register determine CC.</p>
+<p>It's also worth noting that if some bits specify DR in load instructions, then it will specify SR in store instructions.</p>
+<h4 id="pc-relative-mode">PC-Relative Mode<a class="headerlink" href="#pc-relative-mode" title="Permanent link">¶</a></h4>
+<p><strong>LD</strong> (opcode=0010) and <strong>ST</strong> (opcode=0011) specify the <strong>PC-relative</strong> addressing mode. </p>
+<p>The memory address is computed by <em>signed-extending</em> <code>bits[8:0]</code> to 16 bits and adding the result to the <em>incremented PC</em> (incremented during FETCH phase). </p>
+<p>Note that the address of the memory opearand is limited to a small range. (<span class="arithmatex">\([-255,+256]\)</span>)</p>
+<p><img src="https://s2.loli.net/2022/07/15/fKwEXeVDpJoj2TF.png" width="70%"/></p>
+<h4 id="indirect-mode">Indirect Mode<a class="headerlink" href="#indirect-mode" title="Permanent link">¶</a></h4>
+<p><strong>LDI</strong> (opcode=1010) and <strong>STI</strong>(opcode=1011) specify the <strong>indirect</strong> addressing mode.  </p>
+<p>An address is first formed exactly the same way as with LD, however, the result is the address of the address of the operand. So we need to interrogate memory twice. </p>
+<p>Note that the address of the operand can be <em>anywhere</em>.</p>
+<p><img src="https://s2.loli.net/2022/07/15/PvYQFLBEoKfu79G.png" width="70%"/></p>
+<p>In the example above, the incremented PC is <code>x4A1C</code> and the sign-extended offset is <code>xFFCC</code>. So we first get the address <code>x49E8</code> and get the data in <code>x49E8</code>, which is <code>x2110</code>. Then we obtain the data in <code>x2110</code> and load the value into the register <code>R3</code>. </p>
+<h4 id="baseoffset-mode">Base+offset Mode<a class="headerlink" href="#baseoffset-mode" title="Permanent link">¶</a></h4>
+<p><strong>LDR</strong> (opcode=0110) and <strong>STR</strong> (opcode=0111) specify the <strong>Base+offset</strong> addressing mode.</p>
+<p>The address is obtained by adding a <em>signed-extended</em> 6-bit(<code>bits[5:0]</code>) offset to a base register(<code>bits[8:6]</code>). </p>
+<p>Note that the address of the operand can also be <em>anywhere</em>.</p>
+<p><img src="https://s2.loli.net/2022/07/15/kZcDdNHxw72SmFo.png" width="70%"/></p>
+<h3 id="control-instructions">Control Instructions<a class="headerlink" href="#control-instructions" title="Permanent link">¶</a></h3>
+<p>The LC-3 has 5 opcodes that enable the sequential execution flow to be broken: <em>conditional branch</em>, <em>unconditional jump</em>, <em>subroutine call</em>( funtion), <em>TRAP</em> (service call) and <em>RTI</em>.</p>
+<h4 id="conditional-branches">Conditional Branches<a class="headerlink" href="#conditional-branches" title="Permanent link">¶</a></h4>
+<p><img src="https://s2.loli.net/2022/07/15/tFYwsjUrcJBmx2k.png" width="100%"/></p>
+<p><strong>BR</strong> (opcode=0000) uses condition codes to determine whether or not to depart from the usual sequential execution. Besides, not all condition codes will be inpected and we can determine which condition codes will be inspected. <strong><em>e.g.</em></strong> In <code>BRz x0D9</code>, <code>bit[11:9]=010</code> so we only check the condition code Z, which means if the result of the last instruction that can set CC is zero, then we will jump to the target address. </p>
+<p>Additionally, if we request to check all condition codes, like <code>BRnzp x0D9</code>, it means an <strong>unconditional branch</strong>.  Since the result of the operation can be positive, negative or zero, so at least one of CC will be set. Meanwhile, if <code>bits[11:9]=000</code>, nothing will happen, just like a nop (an insruction but do nothing and will cause no difference)</p>
+<p>In summary, it is only <em>ADD, AND, LD, LDI, LDR, NOT</em> that will change CC after finishing operations.</p>
+<h4 id="the-jmp-instruction">The JMP Instruction<a class="headerlink" href="#the-jmp-instruction" title="Permanent link">¶</a></h4>
+<p><img src="https://s2.loli.net/2022/07/15/TB8A7xo2iEmFWQw.png" width="100%"/></p>
+<p>The <strong>JMP</strong> instruction (opcode=1100) loads the PC with the contents of the <em>register</em> specified by bits[8:6] of the instruction. (its addressing mode is by register)</p>
+<h4 id="the-trap-instruction">The TRAP Instruction<a class="headerlink" href="#the-trap-instruction" title="Permanent link">¶</a></h4>
+<p><img src="https://s2.loli.net/2022/07/15/8P7j5rg9o6n1d2K.png" width="100%"/></p>
+<p>The <strong>TRAP</strong> instruction (opcode=1111) changes the PC to a memory address that is part of the operating system so that the OS will perform some task on behalf of the program. Once the service call ends, the PC is set to be the address of the instruction following the TRAP instruction.</p>
+<ul>
+<li>Input a character from the keyboard (<code>trapvector = x23</code>)</li>
+<li>Output a character to the monitor (<code>trapvector = x21</code>)</li>
+<li>Halt the program (<code>trapvector = x25</code>)</li>
+</ul>
+<p>Some useful trap service routines are given in the P675 Table A.3. The details of the TRAP instructions will be dicussed in Chapter 9.</p>
+<h2 id="the-datapath">The Datapath<a class="headerlink" href="#the-datapath" title="Permanent link">¶</a></h2>
+<p>Here is only a figure of LC-3 datapath. Please be clear of the data flow for each instruction and the related control signals. A good way is to draw a datapath on your own hands.  </p>
+<p><img src="https://s2.loli.net/2022/07/15/B3RpuTriUJO1LQG.png" width="100%"/></p>
 <hr/>
 <div class="md-source-file">
 <small>
@@ -327,6 +732,7 @@
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
 </small>
 </div>
+<link href="/css/counter.css" rel="stylesheet"/>
 <!-- Giscus -->
 <h2 id="__comments">评论</h2>
 <!-- 这里改成你的Giscus代码 -->
