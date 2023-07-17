@@ -22,6 +22,8 @@ counter: False
 
 | 时间 | 内容 |
 | --- | :------------------------------------ |
+|2023.7.17| 更新了 [TA Session 4 的 PPT](resource.md)|
+|2023.7.17| 更新了 Chapter 5 的 [Notes](note/chap05.md)|
 |2023.7.15| Release [Lab 1](lab/lab1.md) |
 |2023.7.15| 更新了 Chapter 4 的 [Notes](note/chap04.md)|
 |2023.7.15| 更新了 [TA Session 3 的 PPT](resource.md)|
@@ -30,7 +32,7 @@ counter: False
 |2023.7.13| 更新了 Chapter 1, 2 的 [Notes](note/index.md)|
 |2023.7.12| 更新了 [TA Session 1 的 PPT](resource.md)|
 | 2023.7.10 | 更新了主页的布局，修改了部分措辞|
-| 2023.7.5 | 新建课程主页！全新的开始！ |
+<!-- | 2023.7.5 | 新建课程主页！全新的开始！ | -->
 
 ## 如何提建议
 
