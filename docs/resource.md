@@ -53,3 +53,14 @@
 </div>
 <a class="down-button" target="_blank" href="../assets/TA_Session_4.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
 </div>
+
+* **TA Session 5** on 7.19
+
+<div class="card file-block" markdown="1">
+<div class="file-icon"><img src="../assets/pdf.svg" style="height: 3em;"></div>
+<div class="file-body">
+<div class="file-title">TA Session 5</div>
+<div class="file-meta">1195 KB / 22 P / 2023-07-19</div>
+</div>
+<a class="down-button" target="_blank" href="../assets/TA_Session_5.pdf" markdown="1">:fontawesome-solid-download: 下载</a>
+</div>
