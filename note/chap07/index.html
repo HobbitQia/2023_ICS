@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#aseembly-language">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -236,9 +239,122 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Assembly Language
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Assembly Language
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#assembly-language">
+    Assembly Language
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#an-assembly-language-program">
+    An Assembly Language Program
+  </a>
+<nav aria-label="An Assembly Language Program" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#instructions">
+    Instructions
+  </a>
+<nav aria-label="Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opcodes">
+    Opcodes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#operands">
+    Operands
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#labels">
+    Labels
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comments">
+    Comments
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pseudo-ops-assembler-directives">
+    Pseudo-Ops (Assembler Directives)
+  </a>
+<nav aria-label="Pseudo-Ops (Assembler Directives)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#orig">
+    .ORIG
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fill">
+    .FILL
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blkw">
+    .BLKW
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stringz">
+    .STRINGZ
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#end">
+    .END
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-assembly-process">
+    The Assembly Process
+  </a>
+<nav aria-label="The Assembly Process" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-first-pass-creating-the-symbol-table">
+    The First Pass: Creating the Symbol Table
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-second-pass-generating-the-machine-language-program">
+    The Second Pass: Generating the Machine Language Program
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beyond-the-assembly-of-a-single-assembly-language-program">
+    Beyond the Assembly of a Single Assembly Language Program
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../chap08/">
@@ -309,19 +425,190 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#assembly-language">
+    Assembly Language
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#an-assembly-language-program">
+    An Assembly Language Program
+  </a>
+<nav aria-label="An Assembly Language Program" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#instructions">
+    Instructions
+  </a>
+<nav aria-label="Instructions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opcodes">
+    Opcodes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#operands">
+    Operands
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#labels">
+    Labels
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comments">
+    Comments
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pseudo-ops-assembler-directives">
+    Pseudo-Ops (Assembler Directives)
+  </a>
+<nav aria-label="Pseudo-Ops (Assembler Directives)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#orig">
+    .ORIG
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fill">
+    .FILL
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blkw">
+    .BLKW
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stringz">
+    .STRINGZ
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#end">
+    .END
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-assembly-process">
+    The Assembly Process
+  </a>
+<nav aria-label="The Assembly Process" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-first-pass-creating-the-symbol-table">
+    The First Pass: Creating the Symbol Table
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-second-pass-generating-the-machine-language-program">
+    The Second Pass: Generating the Machine Language Program
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beyond-the-assembly-of-a-single-assembly-language-program">
+    Beyond the Assembly of a Single Assembly Language Program
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Assembly Language</h1>
+<h1 id="aseembly-language">Aseembly Language<a class="headerlink" href="#aseembly-language" title="Permanent link">¶</a></h1>
+<div class="card file-block">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"/></div>
+<div class="file-body">
+<div class="file-title">Chapter 7</div>
+<div class="file-meta">257 KB / 4 P / 2023-07-19</div>
+</div>
+<p><a class="down-button" href="../../assets/notes/chap07.pdf" markdown="1" target="_blank"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> 下载</a></p>
+</div>
+<h2 id="assembly-language">Assembly Language<a class="headerlink" href="#assembly-language" title="Permanent link">¶</a></h2>
+<p>We generally partition mechanical languages into 2 classes:</p>
+<ul>
+<li><strong>high-level</strong><br/>
+High-level languages tend to be <strong>ISA-independent</strong>. <strong><em>e.g.</em></strong> C, C++, Java, Python</li>
+<li><strong>low-level</strong><br/>
+Assembly languages are low-level languages, and they are very much <strong>ISA-dependent</strong>. It is usually the case that each ISA has only one assembly language.</li>
+</ul>
+<h2 id="an-assembly-language-program">An Assembly Language Program<a class="headerlink" href="#an-assembly-language-program" title="Permanent link">¶</a></h2>
+<h3 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">¶</a></h3>
+<p>An instrution in assembly language consists of 4 parts, and two of it (<code>Label</code> and <code>Comment</code>) are optional.<br/>
+<code>Label Opcode Operands ; Comment</code></p>
+<h4 id="opcodes">Opcodes<a class="headerlink" href="#opcodes" title="Permanent link">¶</a></h4>
+<p>The <strong>opcode</strong> is a <em>symbolic name</em> for the opcode of the correspounding LC-3 instruction so we can memorize the instruction easier. <strong><em>e.g.</em></strong> <code>ADD</code>, <code>AND</code>, or <code>LDR</code> rather than 0001, 0101 or 0110.</p>
+<h4 id="operands">Operands<a class="headerlink" href="#operands" title="Permanent link">¶</a></h4>
+<p>The number of operands depends on the operation being performed. <strong><em>e.g.</em></strong> <code>ADD</code> requires 3 operands.</p>
+<p>A <strong>literal value</strong> must contain a symbol identifying the representation base of the number. We use <em># for decimal</em>, <em>x for hexadecimal</em>, and <em>b for binary</em>. (must)</p>
+<p>Sometimes we use labels as operands so that we don't need to remember the explicit 16-bit addresses. Details will be covered in the next part.</p>
+<h4 id="labels">Labels<a class="headerlink" href="#labels" title="Permanent link">¶</a></h4>
+<p><strong>Labels</strong> are symbolic names used to <em>identify memory locations</em> that are referred explicitly in the program. In LC-3, a label consists of from 1 to 20 alphanumeric characters starting with a letter of the alphabet.(reserved words excluded)</p>
+<p>There are 2 reasons for explicitly referring to a memory location:</p>
+<ul>
+<li>The location is the target of a branch instruction. <strong><em>e.g.</em></strong> <code>BRnzp LOOP</code></li>
+<li>The location contains a value that is loaded or stored. <strong><em>e.g.</em></strong> <code>LD R1, TEMP</code></li>
+</ul>
+<h4 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">¶</a></h4>
+<p><strong>Comments</strong> are messages intened only for human consumption. They have <em>no effect</em> on the translation process and indeed are not acted on by the LC-3 assembler.</p>
+<p>They are identified by <em>semicolons</em>. A semicolon signifies the rest of the line is a commment and is to be ignored by the assembler. <strong><em>e.g.</em></strong> <code>LD R0, ASCII ; Load the ASCII template</code> The message "Load the ASCII template" is a comment.</p>
+<h3 id="pseudo-ops-assembler-directives">Pseudo-Ops (Assembler Directives)<a class="headerlink" href="#pseudo-ops-assembler-directives" title="Permanent link">¶</a></h3>
+<p><strong>Pseudo-op</strong> is also called <strong>assembler directive</strong>, and it dose not refer to an operation that will be performed by the program during execution.</p>
+<h4 id="orig">.ORIG<a class="headerlink" href="#orig" title="Permanent link">¶</a></h4>
+<p><code>.OGIR</code> tells the assembler where in memory to place the LC-3 program. (to specify the start address) We normally write <code>.ORIG x3000</code>, which means our program will start at the address <code>x3000</code>.</p>
+<h4 id="fill">.FILL<a class="headerlink" href="#fill" title="Permanent link">¶</a></h4>
+<p><code>.FILL</code> tells the assembler to set aside the next location in the program and initiallize it with the value of the operand. The value can be either a number or a label. <strong><em>e.g.</em></strong> <code>x3006: .FILL x0030</code> then <code>x0030</code> will be stored in the location <code>x3006</code>.</p>
+<h4 id="blkw">.BLKW<a class="headerlink" href="#blkw" title="Permanent link">¶</a></h4>
+<p><code>.BLKW</code> tells the assembler to set aside some number of sequential memory locations. (<strong>i.e.</strong> a <strong>BL</strong>oc<strong>K</strong> of <strong>W</strong>ords) <strong><em>e.g.</em></strong> <code>x3007: .BLKW 1</code> then the location <code>x3007</code> will be set aside then we can store or write content to that position.</p>
+<h4 id="stringz">.STRINGZ<a class="headerlink" href="#stringz" title="Permanent link">¶</a></h4>
+<p><code>.STRINGZ</code> tells the assembler to initiallize a sequence of <span class="arithmatex">\(n+1\)</span> memory locations. The argument is asquence of <span class="arithmatex">\(n\)</span> characters inside double quotation marks. The first <span class="arithmatex">\(n\)</span> words of memroy are initiallize with the zero-extended ASCII codes of the correspounding characters in the string. The final word is 0. (<code>\0</code>)</p>
+<h4 id="end">.END<a class="headerlink" href="#end" title="Permanent link">¶</a></h4>
+<p><code>.END</code> tells the assembler it has reached the end of the program. Contents after <code>.END</code> will not be processed by the assembler.</p>
+<p>Note that <code>.END</code> does not stop the program during execution. In fact, <code>.END</code> does not even exist at the time of execution.</p>
+<h2 id="the-assembly-process">The Assembly Process<a class="headerlink" href="#the-assembly-process" title="Permanent link">¶</a></h2>
+<p>It's the job of the LC-3 assembler to perform the translation from the LC-3 assembly language into a machine language program.</p>
+<p>We use the command <code>assemble</code> and it requires the filename of your assembly language program as an argument, and it produces the file outfile, which is in the ISA of LC-3. <code>assemble soutiona1.asm outfile</code></p>
+<p>The assembly process is done in <strong>two complete passes</strong> (from beginning to <code>.END</code>) through the entire assembly language program.</p>
+<h3 id="the-first-pass-creating-the-symbol-table">The First Pass: Creating the Symbol Table<a class="headerlink" href="#the-first-pass-creating-the-symbol-table" title="Permanent link">¶</a></h3>
+<p>The <strong>symbol table</strong> is simply a correspoundence of <em>symbolic names</em> with <em>their 16-bit memory addresses</em>. In the <strong>first pass</strong> we identify each label with the memory address of its assigned entry.</p>
+<p><strong><em>e.g.</em></strong>
+<img src="https://s2.loli.net/2022/07/16/5WHXTzQSvClqGLp.png" width="20%"/></p>
+<h3 id="the-second-pass-generating-the-machine-language-program">The Second Pass: Generating the Machine Language Program<a class="headerlink" href="#the-second-pass-generating-the-machine-language-program" title="Permanent link">¶</a></h3>
+<p>The <strong>second pass</strong> consists of going through the assembly language line by line, with the help of the symbol table. At each line, the assembly language instruction is translated into an LC-3 machine language instruction. </p>
+<p>The only part of the <code>LD</code> instruction left to do is the PCoffset. So it's necessary that the address of the source is no more than +256 or -255 memory locations from the <code>LD</code> instruction. Otherwise, assembly error.</p>
+<h2 id="beyond-the-assembly-of-a-single-assembly-language-program">Beyond the Assembly of a Single Assembly Language Program<a class="headerlink" href="#beyond-the-assembly-of-a-single-assembly-language-program" title="Permanent link">¶</a></h2>
+<p>Actually, this part will probably not be in the final exam. If interested, you can turn Chapter 7: Linking of CSAPP (<strong>i.e.</strong> Computer Systems: A Programmer's Perspective), or refer to <a href="https://note.hobbitqia.cc/CSAPP/7/">my note</a>. </p>
+<p>When a computer begins execution of a program, the entity being executed is called a <strong>executable image</strong>. The executable image is created from modules often created independently by several different programmers (also different object files).</p>
+<p>we write <code>PTR .FILL STARTofFILE</code> in the program but there is no such a label <code>STARTofFILE</code> in our program while the label is in another module by different programmer. We can use <code>.EXTERNAL STARTofFILE</code>, then at link time when all modules are combined, the linker will find the symbol table entry.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月19日 14:30:58</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>

@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#anagram-checker">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -273,9 +276,60 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Lab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Lab2
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limitations">
+    Limitations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../lab3/">
@@ -309,19 +363,128 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limitations">
+    Limitations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Lab2</h1>
+<h1 id="anagram-checker">Anagram Checker<a class="headerlink" href="#anagram-checker" title="Permanent link">¶</a></h1>
+<div class="card file-block">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"/></div>
+<div class="file-body">
+<div class="file-title">Lab 2: Anagram Checker</div>
+<div class="file-meta">37 KB / 2 P / 2023-07-19</div>
+</div>
+<p><a class="down-button" href="../../assets/lab/Lab2.pdf" markdown="1" target="_blank"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> 下载</a></p>
+</div>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>Professor Patt found that anagrams are very interesting. Anagrams are words or phrases that have the same characters but in a different order. For example, "listen" and "silent" are anagrams, "eleven plus two" and "twelve plus one" are anagrams, "dormitory" and "dirty room" are also anagrams. As a computer man, Professor Patt would like to let computer do the check. Your job is to write a program to check if two given strings are anagrams.</p>
+<h2 id="implementation-details">Implementation Details<a class="headerlink" href="#implementation-details" title="Permanent link">¶</a></h2>
+<ul>
+<li>You are required to write in LC-3 assembly language.</li>
+<li>Your program should start at x3000.</li>
+<li>The two given strings are stored in memory, and their start addresses are placed at x4000
+and x4001. You are only required to compare characters <code>a-z</code>. Here comparation is case insensitive, which means "Listen" and "Silent" are anagrams. Blanks should be ignored, which
+means "dormitory" and "dirty room" are anagrams. Other characters will not appear in the
+given strings.</li>
+<li>After check, output <code>YES</code> or <code>NO</code> to the console as the result. Use instruction <code>TRAP x21</code> (<code>OUT</code>)
+to output a char or use instrucion <code>TRAP x22</code> (<code>PUTS</code>) to output a string.</li>
+<li>You can write code to load data in x4000 like this:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>        .ORIG x4000
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>        .FILL str1
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>        .FILL str2
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>str1    .STRINGZ "listen"
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>str2    .STRINGZ "silent"
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>        .END
+</code></pre></div>
+Actually you can write more than one <code>.ORIG</code> and <code>.END</code> pairs in a single .asm file, in order to
+making your code distributed in different memory addresses.</li>
+<li>Remember to halt your program after execution.</li>
+</ul>
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">¶</a></h2>
+<ul>
+<li>the length of one given string: <span class="arithmatex">\(0&lt;l\leq 100\)</span></li>
+</ul>
+<h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">¶</a></h2>
+<p>Lab 2 takes <strong>5%</strong> of the total score, consisting of Check part (50%) and Report part (50%).</p>
+<h3 id="check-part">Check Part<a class="headerlink" href="#check-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>First upload your code to Learning in ZJU, then find a TA to check your code in person. TAs will first test the correctness of your program, then ask you some questions to make sure you understand what you code but not cheat.</li>
+<li>You can try again if you fail in checking, but there will be a penalty of -10% (of checking part) for each try.</li>
+<li>We strongly suggest you to make a thorough test by yourself before checking.</li>
+<li>We strongly suggest you to write enough comments in your code so that you will be aware of
+what's going on in your program and confident to answer TA's questions.</li>
+</ul>
+<h3 id="report-part">Report Part<a class="headerlink" href="#report-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>Report must be written <strong>in English</strong>, concise and carrying main ideas. Try to use the report to convince TAs that you complete the task by yourself.</li>
+<li>Your lab report should contains the following contents:<ul>
+<li>Algorithm. Flowchart or Pseudocode is prefered. The complexity of your algorithm will not affect your score.</li>
+<li>Essential parts of your code with sufficient comments. Please only select the most important code phases and explain them.</li>
+<li>Questions that TA asked you, and Answers.</li>
+</ul>
+</li>
+<li><strong>No more than 2 A4 pages</strong>. No template provided. Be sure to make it readable.</li>
+</ul>
+<h3 id="penalty">Penalty<a class="headerlink" href="#penalty" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Wrong Answer</strong>: -10% of Check part each time.</li>
+<li><strong>Delay</strong>: -20% of the corresponding part per day.</li>
+<li><strong>Cheating</strong>: -100% of this lab. Additionly, -10% of the final score of this course. <strong>Please note that upload your answer to the Internet is also CHEATING!!!</strong></li>
+</ul>
+<p>If you have more questions, please contact your TA or comment here.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月19日 14:30:58</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
