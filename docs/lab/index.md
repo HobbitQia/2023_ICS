@@ -18,3 +18,4 @@ To be continued...
 ## 实验日历
 
 * Lab1: Lucky 111  Released on 7.15
+* Lab2: Anagram Checker  Released on 7.17

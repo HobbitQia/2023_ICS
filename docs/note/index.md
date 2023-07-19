@@ -8,6 +8,6 @@
 * Chapter 4: The von-Neumann Model [在线笔记](chap04.md)/[pdf 版笔记](../assets/notes/chap04.pdf)
 * Chapter 5: The LC-3 [在线笔记](chap05.md)/[pdf 版笔记](../assets/notes/chap05.pdf)
 * Chapter 6: Programming in LC-3 Assembly [在线笔记]()/[pdf 版笔记]()
-* Chapter 7: Assembly Language [在线笔记]()/[pdf 版笔记]()
+* Chapter 7: Assembly Language [在线笔记](chap07.md)/[pdf 版笔记](../assets/notes/chap07.pdf)
 * Chapter 8: Data Structures [在线笔记]()/[pdf 版笔记]()
 * Chapter 8: I/O [在线笔记]()/[pdf 版笔记]()
