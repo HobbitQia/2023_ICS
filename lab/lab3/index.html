@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#lab-3-deque">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -278,9 +281,60 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Lab3
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Lab3
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limitation">
+    Limitation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../lab4/">
@@ -309,19 +363,192 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limitation">
+    Limitation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Lab3</h1>
+<h1 id="lab-3-deque">Lab 3: Deque<a class="headerlink" href="#lab-3-deque" title="Permanent link">¶</a></h1>
+<div class="card file-block">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"/></div>
+<div class="file-body">
+<div class="file-title">Lab3: Deque</div>
+<div class="file-meta">46 KB / 2 P / 2023-07-21</div>
+</div>
+<p><a class="down-button" href="../../assets/lab/Lab3.pdf" markdown="1" target="_blank"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> 下载</a></p>
+</div>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>Professor Patt thinks queue and stack are both useful data structures, but combining them into one structure must be better. A list supporting pop and push on both sides sounds great. Your job is to help Professor Patt to implement such a list, which is called deque formally.</p>
+<h2 id="implementation-details">Implementation Details<a class="headerlink" href="#implementation-details" title="Permanent link">¶</a></h2>
+<ul>
+<li>You are required to write in <strong>LC-3 assembly language</strong>.</li>
+<li>Your program should start at x3000.</li>
+<li>Use instrucion <code>TRAP x20</code> (GETC) to get an input char. Do not use instruction <code>TRAP x23</code> (IN).</li>
+<li>Use instrucion <code>TRAP x21</code> (OUT) to output a char or use instrucion <code>TRAP x22</code> (PUTS) to output a string.</li>
+<li>The list should support the following operations:<ul>
+<li><code>+s</code> : push s to the left side</li>
+<li><code>-</code> : pop a char from the left side and print it</li>
+<li><code>[s</code> : push s to the right side</li>
+<li><code>]</code> : pop a char from the right side and print it
+The list is empty at first, and <code>s</code> is a char in <code>a-z</code> and <code>A-Z</code>. When the list is empty and pop, just print a <code>_</code> as the result. Here is an illustration:</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Operation</th>
+<th align="center">List</th>
+<th align="center">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">-</td>
+<td align="center">(empty at first)</td>
+<td align="center">_</td>
+</tr>
+<tr>
+<td align="center">+a</td>
+<td align="center">a</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+D</td>
+<td align="center">Da</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+d</td>
+<td align="center">dDa</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+o</td>
+<td align="center">odDa</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+A</td>
+<td align="center">AodDa</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">]</td>
+<td align="center">AodD</td>
+<td align="center">a</td>
+</tr>
+<tr>
+<td align="center">[b</td>
+<td align="center">AodDb</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">odDb</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="center">]</td>
+<td align="center">odD</td>
+<td align="center">b</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Sample input and output:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>-+a+D+d+o+A][b-]
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>_aAb
+</code></pre></div>
+Please note that input char is <strong>echoed</strong> in screen. Only after you press ENTER , the answer will
+output.  </li>
+<li>Remember to halt your program in the end.</li>
+</ul>
+<h2 id="limitation">Limitation<a class="headerlink" href="#limitation" title="Permanent link">¶</a></h2>
+<ul>
+<li>the length of input string: <span class="arithmatex">\(0\leq l \leq 199\)</span></li>
+<li>no overflow</li>
+</ul>
+<h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">¶</a></h2>
+<p>Lab 3 takes <strong>6%</strong> of the total score, consisting of Check part (50%) and Report part (50%).</p>
+<h3 id="check-part">Check Part<a class="headerlink" href="#check-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>First upload your code to Learning in ZJU, then find a TA to check your code in person. TAs will first test the correctness of your program, then ask you some questions to make sure you understand what you code but not cheat.</li>
+<li>You can try again if you fail in checking, but there will be a penalty of -10% (of checking part) for each try.</li>
+<li>We strongly suggest you to make a thorough test by yourself before checking.</li>
+<li>We strongly suggest you to write enough comments in your code so that you will be aware of
+what's going on in your program and confident to answer TA's questions.</li>
+</ul>
+<h3 id="report-part">Report Part<a class="headerlink" href="#report-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>Report must be written <strong>in English</strong>, concise and carrying main ideas. Try to use the report to convince TAs that you complete the task by yourself.</li>
+<li>Your lab report should contains the following contents:<ul>
+<li>Algorithm. Flowchart or Pseudocode is prefered. The complexity of your algorithm will not affect your score.</li>
+<li>Essential parts of your code with sufficient comments. Please only select the most important code phases and explain them.</li>
+<li>Questions that TA asked you, and Answers.</li>
+</ul>
+</li>
+<li><strong>No more than 2 A4 pages</strong>. No template provided. Be sure to make it readable.</li>
+</ul>
+<h3 id="penalty">Penalty<a class="headerlink" href="#penalty" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Wrong Answer</strong>: -10% of Check part each time.</li>
+<li><strong>Delay</strong>: -20% of the corresponding part per day.</li>
+<li><strong>Cheating</strong>: -100% of this lab. Additionly, -10% of the final score of this course. <strong>Please note that upload your answer to the Internet is also CHEATING!!!</strong></li>
+</ul>
+<p>If you have more questions, please contact your TA or comment here.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月24日 00:05:07</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>

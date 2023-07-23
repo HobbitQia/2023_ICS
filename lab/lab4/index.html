@@ -29,6 +29,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#lab-4-flappy-bird">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -283,9 +286,79 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Lab4
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Lab4
       </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+<nav aria-label="Implementation Details" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-program">
+    User program
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interrupt-service-routine">
+    Interrupt service routine
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-booting-code">
+    System booting code
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limitation">
+    Limitation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../lab5/">
@@ -309,19 +382,215 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-details">
+    Implementation Details
+  </a>
+<nav aria-label="Implementation Details" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-program">
+    User program
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interrupt-service-routine">
+    Interrupt service routine
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-booting-code">
+    System booting code
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limitation">
+    Limitation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grading">
+    Grading
+  </a>
+<nav aria-label="Grading" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-part">
+    Check Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#report-part">
+    Report Part
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#penalty">
+    Penalty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Lab4</h1>
+<h1 id="lab-4-flappy-bird">Lab 4: Flappy Bird<a class="headerlink" href="#lab-4-flappy-bird" title="Permanent link">¶</a></h1>
+<div class="card file-block">
+<div class="file-icon"><img src="../../assets/pdf.svg" style="height: 3em;"/></div>
+<div class="file-body">
+<div class="file-title">Lab4: Flappy Bird</div>
+<div class="file-meta">50 KB / 4 P / 2023-07-23</div>
+</div>
+<p><a class="down-button" href="../../assets/lab/Lab4.pdf" markdown="1" target="_blank"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> 下载</a></p>
+</div>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>Professor Patt has played the game Flappy Bird, but was very annoyed because of the difficulty.
+As a computer man, he would like to make a slower version of this game. Your job is to help him to finish the basic part of this game and display it in LC3's console.</p>
+<h2 id="implementation-details">Implementation Details<a class="headerlink" href="#implementation-details" title="Permanent link">¶</a></h2>
+<ul>
+<li>You are required to write in <strong>LC-3 assembly language</strong>.</li>
+<li>Your program should consist of three parts:<ul>
+<li>The system booting code, starting at 0x0200.</li>
+<li>The interrupt service routine, starting at ( ).</li>
+<li>The user program, starting at x3000.<br/>
+You can write more than one .ORIG and .END pairs in a single .asm file, in order to making
+your code distributed in different memory addresses.</li>
+</ul>
+</li>
+</ul>
+<h3 id="user-program">User program<a class="headerlink" href="#user-program" title="Permanent link">¶</a></h3>
+<p>The user program prints continuously and infinitely. In the original game, a bird is flying from left to right, but you may fly from top to bottom. In the game, the bird is represented by 3 continuous chars(for example <code>aaa</code>). Without control, it will fall to left, but the user can make it fly to right 1-9 blocks (chars) by pressing corresponding numbers. By the way, the bird will change its appearance after the user presses <code>a-z</code>. You should print 20 chars each line, and use . as air.</p>
+<p>Here is an example:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>.....aaa............ User Input(you don't need to echo it)
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>....aaa.............
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>...aaa..............
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>............aaa..... &lt;-9
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>...........aaa......
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>.................aaa &lt;-8
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>................aaa.
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>...............aaa..
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>..............aaa...
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>.............aaa....
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>............aaa.....
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>...........aaa......
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>..........aaa.......
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>.........aaa........
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>........ddd......... &lt;-d
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a>.......ddd..........
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a>......ddd...........
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a>.....ddd............
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a>....ddd.............
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>...ddd..............
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a>..aaa............... &lt;-a
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a>.aaa................
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a>aaa.................
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a>aaa.................
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a>ooo................. &lt;-o
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a>ooo.................
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a>....ooo............. &lt;-4
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a>...ooo..............
+</code></pre></div>
+<p>Falling to ground (the leftmost side) won't end the game. Flying too high (right) is not allowed. Justput the bird on the rightmost side if it fly out of the screen.</p>
+<p>Delay for a short time between two lines so that our eyes can keep up with the output. A simple
+way to delay is to count down from 256 (or any number) to 0, like:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>DELAY   ST R1, SAVER1
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>        LD R1, COUNT
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>LOOP    ADD R1, R1, #-1
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>        BRnp LOOP
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>        LD L1, SAVER1
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>        RET
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a>COUNT   .FILL #256
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a>SAVER1  .BLKW #1
+</code></pre></div>
+Set the initial position and appearance of the bird by yourself.
+<h3 id="interrupt-service-routine">Interrupt service routine<a class="headerlink" href="#interrupt-service-routine" title="Permanent link">¶</a></h3>
+<p>Once someone hits the keyboard, the keyboard interrupt service should handle the input and do
+some corresponding work.</p>
+<p>The detail is left for you to finish.</p>
+<p>(Here are some default trap and interrupt service routines in LC-3, you can find them between
+x0000 and x2FFF in memory.)</p>
+<h3 id="system-booting-code">System booting code<a class="headerlink" href="#system-booting-code" title="Permanent link">¶</a></h3>
+<p>You may have already observed that the system booting code in the LC-3 simulator is located at
+x0200:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>            .ORIG x0200
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>            LD R6, OS_SP
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>            LD R0, USER_PSR
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>            ADD R6, R6, #-1
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>            STR R0, R6, #0
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>            LD R0, USER_PC
+<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a>            ADD R6, R6, #-1
+<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a>            STR R0, R6, #0
+<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a>            RTI
+<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a>OS_SP       .FILL x3000
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a>USER_PSR    .FILL x8002
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a>USER_PC     .FILL x3000
+</code></pre></div>
+The original system booting code is executed in supervisor mode. It initializes the system stack at x3000 (<code>OS_SP</code>), and then pushes PSR (<code>USER_PSR</code>) and PC (<code>USER_PC</code>) for user mode, and then finally <code>RTI</code> to the user code at x3000 (<code>USER_PC</code>).
+In order to make the keyboard interrupt enable, some operations are necessary. Please <strong>re-write</strong> the system booting code, furnishing the requirements for the keyboard interrupt. Here are some hints:  
+<ol>
+<li>You should enable the keyboard interrupt. The interrupt enable bit is part of the device
+status register. For the keyboard, the device status register, i.e. KBSR, is located at ( ).
+Therefore, you should do ( ).  </li>
+<li>You should let the machine know how to handle the keyboard interrupt. The interrupt vector
+INTV for the keyboard is x80. Therefore, you should put the starting address of ( ) in the
+correct place in the interrupt vector table, that is ( ).</li>
+</ol>
+<h2 id="limitation">Limitation<a class="headerlink" href="#limitation" title="Permanent link">¶</a></h2>
+<ul>
+<li>input char: <code>0-9</code> and <code>a-z</code></li>
+</ul>
+<h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">¶</a></h2>
+<p>Lab 4 takes <strong>7%</strong> of the total score, consisting of Check part (50%) and Report part (50%).</p>
+<h3 id="check-part">Check Part<a class="headerlink" href="#check-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>First upload your code to Learning in ZJU, then find a TA to check your code in person. TAs will first test the correctness of your program, then ask you some questions to make sure you understand what you code but not cheat.</li>
+<li>You can try again if you fail in checking, but there will be a penalty of -10% (of checking part) for each try.</li>
+<li>We strongly suggest you to make a thorough test by yourself before checking.</li>
+<li>We strongly suggest you to write enough comments in your code so that you will be aware of
+what's going on in your program and confident to answer TA's questions.</li>
+</ul>
+<h3 id="report-part">Report Part<a class="headerlink" href="#report-part" title="Permanent link">¶</a></h3>
+<ul>
+<li>Report must be written <strong>in English</strong>, concise and carrying main ideas. Try to use the report to convince TAs that you complete the task by yourself.</li>
+<li>Your lab report should contains the following contents:<ul>
+<li>Algorithm. Flowchart or Pseudocode is prefered. The complexity of your algorithm will not affect your score.</li>
+<li>Essential parts of your code with sufficient comments. Please only select the most important code phases and explain them.</li>
+<li>Questions that TA asked you, and Answers.</li>
+</ul>
+</li>
+<li><strong>No more than 3 A4 pages</strong>. No template provided. Be sure to make it readable.</li>
+</ul>
+<h3 id="penalty">Penalty<a class="headerlink" href="#penalty" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Wrong Answer</strong>: -10% of Check part each time.</li>
+<li><strong>Delay</strong>: -20% of the corresponding part per day.</li>
+<li><strong>Cheating</strong>: -100% of this lab. Additionly, -10% of the final score of this course. <strong>Please note that upload your answer to the Internet is also CHEATING!!!</strong></li>
+</ul>
+<p>If you have more questions, please contact your TA or comment here.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月24日 00:05:07</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年7月5日 20:07:44</span>
